@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+   <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <style type="text/css" media="screen">
+       html,body{padding: 0px;margin: 0px;}
+
+    #nav_bg{height: 74px;background:rgba(0,0,0,0.7);}
+   .main_button{margin-top:155px ;text-align:center; width:278px;height:70px;border:1px solid #fff; border-radius: 8px;margin-left:436px;background-color: #343434;}
+    .main_button a{color:#fff;font-size:36px;line-height: 70px; }
+        .main_sec {height:579px;}
+        .fir1{height:400px; background:rgba(58,255,255,1);padding:50px 0px 0px 50px; }
+        .fir2{height:400px; background:rgba(234,234,234,1);padding:50px 0px 0px 50px;}
+    </style>
+</head>
+<body>
+    <header id="header" class="header">
+    <nav class="navbar  navbar-fixed-top jsk-nav" role="navigation" id="nav_bg">
+        <div class="container">
+
+            <div class="collapse navbar-collapse" >
+                
+                <ul class="nav navbar-nav " id="nav_ul">
+                    <li>
+                        <a href="#Redir1">博客园</a>
+                    </li>
+                    <li>
+                        <a href="#Redir2"> 博客园</a>
+                    </li>
+                    <li>
+                        <a href="#Redir3"> 博客园 </a>
+                    </li>
+                    <li>
+                        <a href="#Redir4">博客园 </a>
+                    </li>
+                </ul>
+            </div>  <!-- collapse navbar-collapse -->
+        </div>   <!-- container -->
+    </nav>
+   </header><!-- /header -->
+    <section class="main_sec" >
+         <div class="container">
+   
+            <div class="row">
+                 <div class="col-md-12  text-center main_button">
+                      <a href="#fir1" class="learnmore">Learn More</a>
+                 </div>  <!-- col-md-12 -->
+            </div>
+            
+        </div>    
+    <div style="background-color: red;height:76px;margin:277px;" id="fir1"></div>
+    </section>
+    <section class="fir1"   >
+        <div class="container" >
+            <div class="row" >
+                 <div class="col-md-7 " >
+                    <p>博客园</p>
+                    <p>一个IT技术人员想为IT技术人员们提供一个纯净的技术交流空间，博客园很长时间只有一个不能再简单的博客，有近四年，博客园仅靠一个人几年工作的积蓄在维持，互联网浪潮的此起彼伏，"博客"从耀眼的明星成为平民，这些似乎都与博客园无关，博客园一步一个脚印地走着自己的路，傻傻地对每个用户注册进行人工审批、对首页内容宁缺毋滥、对不合适的广告拒之门外，傻傻地对用户体验关怀备至，对盈利模式冷若冰霜。这样一个不起眼的地方，却吸引了很多IT技术精英，把这里当作自己的网上家园，每天在这里分享着精彩的原创内容，也许他们看重的不是华丽的外表、诱人的虚名，而是纯净、专注、对技术人员的理解。</p>
+                 </div>
+
+            </div>
+        </div> 
+    </section>
+     <section class="fir2"   >
+        <div class="container" >
+            <div class="row" >
+                 <div class="col-md-7 " >
+                    <p>博客园</p>
+                    <p>一个IT技术人员想为IT技术人员们提供一个纯净的技术交流空间，博客园很长时间只有一个不能再简单的博客，有近四年，博客园仅靠一个人几年工作的积蓄在维持，互联网浪潮的此起彼伏，"博客"从耀眼的明星成为平民，这些似乎都与博客园无关，博客园一步一个脚印地走着自己的路，傻傻地对每个用户注册进行人工审批、对首页内容宁缺毋滥、对不合适的广告拒之门外，傻傻地对用户体验关怀备至，对盈利模式冷若冰霜。这样一个不起眼的地方，却吸引了很多IT技术精英，把这里当作自己的网上家园，每天在这里分享着精彩的原创内容，也许他们看重的不是华丽的外表、诱人的虚名，而是纯净、专注、对技术人员的理解。</p>
+                 </div>
+
+            </div>
+        </div> 
+    </section>
+
+<script>
+$('.learnmore').click(function(){
+
+ $('html,body').animate({scrollTop:$('#fir1').offset().top},800);
+});
+
+</script>
+
+</body>
+</html>

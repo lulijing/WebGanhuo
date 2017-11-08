@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{padding: 0;margin: 0;}
+			i{display: block;width: 18px;height: 38px;background: url(./img/goto.png) no-repeat;position: absolute;bottom: 30px;left: 50%;
+			margin-left: -9px;cursor: pointer;
+			-webkit-animation: goto 1s linear  infinite;
+		-moz-animation: goto 1s linear  infinite;
+		-ms-animation: goto 1s linear  infinite;
+		animation: goto 1s linear  infinite; 
+			}
+			
+			/*动画*/
+			@keyframes goto{
+				0%  {transform: translateY(0px);}
+				50% {transform: translateY(-10px);}
+				100%{transform: translateY(0px);}
+			}
+			-ms-@keyframes goto{
+				0%  {-ms-transform: translateY(0px);}
+				50% {-ms-transform: translateY(-10px);}
+				100%{-ms-transform: translateY(0px);}
+			}
+			-moz-@keyframes goto{
+				0%  {-moz-transform: translateY(0px);}
+				50% {-moz-transform: translateY(-10px);}
+				100%{-moz-transform: translateY(0px);}
+			}
+			-webkit-@keyframes goto{
+				0%  {-webkit-transform: translateY(0px);}
+				50% {-webkit-transform: translateY(-10px);}
+				100%{-webkit-transform: translateY(0px);}
+			}
+
+		</style>
+	</head>
+	<body style="background: black;">
+		<i class="goto"></i>
+	</body>
+</html>

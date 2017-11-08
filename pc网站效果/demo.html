@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>document</title>
+    <style>
+       *{margin:0;padding: 0;}
+       a{text-decoration: none}
+       .select{position: relative;margin:100px auto;width: 60px;font-size: 14px;}
+       .select_title{display: block;width: 60px;height: 40px;border:1px solid #ccc;border-radius: 4px;text-align: center;line-height: 40px;color:#343434;}
+       .select_title span{ display: inline-block;width: 0;height: 0;border-top:6px solid #ccc;border-right: 4px solid transparent;border-left:4px solid transparent;transition: all .3s;margin-left:4px;}
+       
+       .select:hover .select_title{border-bottom-left-radius: 0;border-bottom-right-radius: 0;}
+       .select:hover .select_title span{border-top-color:#f00;transform: rotateZ(180deg);}
+       .select_con{position: absolute;left: 0;top:40px;border:1px solid #ccc;border-top:0;border-bottom-left-radius: 4px;border-bottom-right-radius: 4px; display: none;z-index: 100;}
+       .select_con em{display: block;height: 36px;line-height: 36px;width: 60px;text-align: center;font-style: normal;}
+       .select_con em:hover{background: #ccc;cursor:pointer;}
+    </style>
+</head>
+<body>
+   <div class="select">
+       <a href="javascript:;" class="select_title">综合<span></span></a>
+       <div class="select_con">
+           <em>晶晶</em>
+           <em>傻瓜</em>
+           <em>可爱</em>
+           <em>活泼</em>
+           <em>漂亮</em>
+           <em>大方</em>
+       </div>
+   </div>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script>
+       $(function(){
+        $('.select').hover(function(){
+            $('.select_con').show()
+        },function(){
+            $('.select_con').hide()
+        })
+        $('.select_con em').click(function(){
+            var Thtml = $(this).html();
+            $('.select_title').html(Thtml+'<span></span>');
+            $('.select_con').hide()
+        })
+       })
+    </script>
+</body>
+</html>
