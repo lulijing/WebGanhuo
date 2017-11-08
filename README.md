@@ -1,68 +1,34 @@
-# swipeSlide for Zepto/jQuery Plugin
+#欢迎使用Cmd - Markdown 编辑阅读器
 
-## 简介
+标签：Cmd-Markdown
 
-移动端（基于Zepto/jQuery）的轮播插件：<http://ons.me/500.html>
+-----
 
-## 示例
+我们理解您更需要更便捷更高效的工具记录思想，整理笔记、知识，并将其承载的价值传播给他人，**Cmd Markdown**是我们给出的答案 ——我们为记录思想和分享知识提供更专业的工具。
 
-![扫一扫](website.png)
-[普通轮播DEMO链接](http://ximan.github.io/swipeSlide/index.html)
+您可以使用 Cmd Markdown：
 
-![扫一扫](website-pic.png)
-[全屏大图DEMO链接](http://ximan.github.io/swipeSlide/full-screen-pic.html)
+> * 整理知识，学习笔记<br>
+> * 发布日记，杂文，所见所想<br>
+> * 撰写发布技术文稿（代码支持）<br>
+> * 撰写发布学术论文（LaTeX公式支持）
 
-![扫一扫](website-text.png)
-[全屏文字DEMO链接](http://ximan.github.io/swipeSlide/full-screen-text.html)
 
-![扫一扫](website-switch.png)
-[快速切换DEMO链接](http://ximan.github.io/swipeSlide/index-switch.html)
+请保留此份 Cmd Markdown 的欢迎手稿兼使用说明，以便日后学习使用。
 
-![扫一扫](website-comment.png)
-[点小图出大图DEMO链接](http://ximan.github.io/swipeSlide/comment-thumbnails.html)
+-----
 
-## 依赖
+##什么是 Markdown
 
-Zepto 或者 jQuery
+Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，**粗体**或者*斜体*某些文字，更棒的是，它还可以
 
-## 使用方法
+* 书写一个质能守恒公司[^LaTex]：
 
-````
-$('.element').swipeSlide({
-    // 参数
-});
-````
+$$E=mc^2$$
 
-## 参数列表
+* 或者高亮一段代码[^code]：
 
-|       参数        |   说明   |  默认值 |      可填值     |
-|------------------|----------|--------|----------------|
-| ul               | 父dom    | ul     | .element的子dom |
-| li               | 子dom    | li     | ul的子dom       |
-| index            | 轮播初始值 | 0     | 数字       |
-| continuousScroll | 连续滚动   | false | true和false |
-| autoSwipe        | 自动切换   | true  | true和false |
-| speed            | 切换速度   | 4000  | 数字        |
-| axisX            | X轴滚动   | true   | true和false |
-| transitionType   | 过渡类型   | ease  | linear/ease/ease-in/ease-out/ease-in-out/cubic-bezier |
-| lazyLoad         | 图片懒加载 | false | true和false |
-| firstCallback    | 页面加载回调| 空    | function(i,sum,me){}（i为索引值，sum为总和，me为自己） |
-| callback         | 每次滚动回调| 空    | function(i,sum,me){}（参数同上） |
+```python
+@requires_anthorization
+class SomeClass:
 
-## API
-
-暴露一些功能，可以让swipeSlide更灵活的使用
-
-`goTo(num)` 指定轮播，详见[DEMO4代码](index-switch.html)
-
-## 最新版本
-
-### 3.4.4(160909)
-
-* 修复自动切换但连不续滚动时，手动操作首屏向前滑动或者末屏向后滑动，不自动切换bug
-
-[所有更新日志](Changelog.md)
-
-## 缺点
-
-只能固定高度或者成比例宽度，无法自适应高度。
